@@ -34,6 +34,8 @@ services:
       volumes:
         - shared:/rpc
         - lnd:/root/.lnd
+      ports:
+        - "10009:10009"
       entrypoint: ["./start-lnd.sh"]
       links:
         - "btcd:blockchain"
