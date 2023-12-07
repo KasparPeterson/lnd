@@ -66,4 +66,5 @@ exec lnd \
     "--rpclisten=$HOSTNAME:10009" \
     "--rpclisten=localhost:10009" \
     --debuglevel="$DEBUG" \
+    --rpcmiddleware.enable \
     "$@"
